@@ -59,10 +59,10 @@ if not GROQ_API_KEY:
 # LLM - original model kept
 # =========================
 llm = ChatGroq(
-    model="llama-3.3-70b-versatile",
-    api_key=GROQ_API_KEY,
+    model="openai/gpt-oss-120b",
+    temperature=0,
+    max_tokens=1024
 )
-
 # =========================
 # State - original fields kept, new control fields added
 # =========================
